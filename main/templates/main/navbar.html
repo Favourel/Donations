@@ -1,0 +1,232 @@
+{% load static %}
+<!--    <link rel="stylesheet" href="{% static 'css/ABOUT.css' %}" media="screen">-->
+
+<link rel="stylesheet" href="{% static 'css/SERVICES.css' %}" media="screen">
+
+<header class="u-clearfix u-header u-sticky u-sticky-190f" id="sec-3a0c">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/" class="u-image u-logo u-image-1">
+            <img src="{% static 'images/default-logo.png' %}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1">
+            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                   href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
+                    <svg class="u-svg-link" viewBox="0 0 24 24">
+                        <use xlink:href="#menu-hamburger"></use>
+                    </svg>
+                    <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect y="1" width="16" height="2"></rect>
+                            <rect y="7" width="16" height="2"></rect>
+                            <rect y="13" width="16" height="2"></rect>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                            href="{% url 'about' %}" style="padding: 10px 7px;">ABOUT</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                            href="{% url 'services' %}" style="padding: 10px 7px;">SERVICES</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FOR INDIVIDUALS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FOR CHURCHES &amp;
+                                    INSTITUTIONS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FOR PROFESSIONAL
+                                    ADVISORS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-nav-item"><a href="{% url 'ministries' %}"
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 7px;">MINISTRIES</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">GRANTS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">SEMINARY
+                                    SCHOLARSHIPS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">CLERGY LEADERSHIP
+                                    TRAINING</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-nav-item"><a href="{% url 'financial_info' %}"
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 7px;">FINANCIAL INFO</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FINANCIAL TERMS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">INVESTMENT
+                                    PHILOSOPHY</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">WESPATH
+                                    INSTITUTIONAL INVESTMENTS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-nav-item"><a href="{% url 'news_events' %}"
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 7px;">NEWS &amp; EVENTS</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FOUNDATION NEWS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">LEGACIES
+                                    NEWSLETTER</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">EVENTS</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">MARKET &amp;
+                                    FINANCIAL NEWS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-nav-item"><a href="{% url 'give_a_gift' %}"
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 5px 10px 7px;">GIVE A GIFT</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">DONATE NOW</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">WAYS TO GIVE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-container-style u-inner-container-layout u-sidenav u-white">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close u-menu-close-1"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-7">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="ABOUT.html"
+                                                      style="padding-top: 20px; padding-bottom: 20px;">ABOUT</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="SERVICES.html"
+                                                      style="padding-top: 20px; padding-bottom: 20px;">SERVICES</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">FOR
+                                            INDIVIDUALS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">FOR
+                                            CHURCHES &amp; INSTITUTIONS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">FOR
+                                            PROFESSIONAL ADVISORS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      style="padding-top: 20px; padding-bottom: 20px;">MINISTRIES</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">GRANTS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">SEMINARY
+                                            SCHOLARSHIPS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">CLERGY
+                                            LEADERSHIP TRAINING</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      style="padding-top: 20px; padding-bottom: 20px;">FINANCIAL
+                                INFO</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">FINANCIAL
+                                            TERMS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">INVESTMENT
+                                            PHILOSOPHY</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">WESPATH
+                                            INSTITUTIONAL INVESTMENTS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      style="padding-top: 20px; padding-bottom: 20px;">NEWS &amp;
+                                EVENTS</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">FOUNDATION
+                                            NEWS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">LEGACIES
+                                            NEWSLETTER</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">EVENTS</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">MARKET
+                                            &amp; FINANCIAL NEWS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      style="padding-top: 20px; padding-bottom: 20px;">GIVE A GIFT</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">DONATE
+                                            NOW</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" style="">WAYS TO
+                                            GIVE</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#"
+                           class="u-border-none u-btn u-button-style u-custom-color-5 u-hover-custom-color-6 u-btn-1">APPLY </a>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+        <a href="#"
+           class="u-border-none u-btn u-button-style u-custom-color-5 u-hover-custom-color-6 u-btn-2">APPLY </a>
+    </div>
+</header>
+
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector(".u-header").style.background = "#fff";
+        document.querySelector(".u-header").style.boxShadow = "hsl(0, 0%, 80%) 0 0 16px";
+        document.querySelector(".brand-name").style.color = "#000";
+
+      } else {
+        document.querySelector(".u-header").style.background = "transparent";
+        document.querySelector(".u-header").style.boxShadow = "none";
+        document.querySelector("brand-name").style.color = "#fff";
+      }
+    }
+
+</script>
