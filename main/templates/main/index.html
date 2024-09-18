@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% load static %}
-
 <html style="font-size: 16px;" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +37,7 @@
 <body data-home-page="https://donations.nicepage.io/Home.html?version=79b38db4-2263-e95f-adb7-c9cdd88dfe09"
       data-home-page-title="Home" data-path-to-root="./" data-include-products="false"
       class="u-body u-overlap u-overlap-contrast u-xl-mode" data-lang="en">
-<header class="u-clearfix u-header " id="sec-3a0c">
+<header class="u-clearfix u-header u-sticky  u-sticky-1310" id="sec-3a0c">
     <div class="u-clearfix u-sheet u-sheet-1">
         <a href="/" class="u-image u-logo u-image-1">
             <img src="{% static 'images/default-logo.png' %}" class="u-logo-image u-logo-image-1">
@@ -68,55 +67,57 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
-                            href="{% url 'services' %}" style="padding: 10px 7px;">SERVICES</a>
+                            href="#" style="padding: 10px 7px;">SERVICES</a>
                         <div class="u-nav-popup">
                             <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
-                                <li class="u-nav-item"><a href="{% url 'services' %}" class="u-button-style u-nav-link u-white">FOR INDIVIDUALS</a>
+                                <li class="u-nav-item"><a href="{% url 'services_individuals' %}"
+                                                          class="u-button-style u-nav-link u-white">FOR INDIVIDUALS</a>
                                 </li>
-                                <li class="u-nav-item"><a href="{% url 'services' %}" class="u-button-style u-nav-link u-white">FOR CHURCHES &amp;
+                                <li class="u-nav-item"><a href="{% url 'services_churches_institutions' %}" class="u-button-style u-nav-link u-white">FOR CHURCHES &amp;
                                     INSTITUTIONS</a>
                                 </li>
-                                <li class="u-nav-item"><a href="{% url 'services' %}" class="u-button-style u-nav-link u-white">FOR PROFESSIONAL
+                                <li class="u-nav-item"><a href="{% url 'services_professional_advisory' %}" class="u-button-style u-nav-link u-white">FOR PROFESSIONAL
                                     ADVISORS</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li class="u-nav-item"><a href="{% url 'ministries' %}"
-                            class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
-                            style="padding: 10px 7px;">MINISTRIES</a>
+                    <li class="u-nav-item"><a href="#"
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 7px;">MINISTRIES</a>
                         <div class="u-nav-popup">
                             <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">GRANTS</a>
+                                <li class="u-nav-item"><a href="{% url 'ministries_grants' %}" class="u-button-style u-nav-link u-white">GRANTS</a>
                                 </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">SEMINARY
+                                <li class="u-nav-item"><a href="{% url 'ministries_seminary_scholarships' %}" class="u-button-style u-nav-link u-white">SEMINARY
                                     SCHOLARSHIPS</a>
                                 </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">CLERGY LEADERSHIP
+                                <li class="u-nav-item"><a href="{% url 'ministries_clergy_leadership_training' %}"
+                                                          class="u-button-style u-nav-link u-white">CLERGY LEADERSHIP
                                     TRAINING</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li class="u-nav-item"><a href="{% url 'financial_info' %}"
-                            class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
-                            style="padding: 10px 7px;">FINANCIAL INFO</a>
+                    <li class="u-nav-item"><a href="#"
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 7px;">FINANCIAL INFO</a>
                         <div class="u-nav-popup">
                             <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FINANCIAL TERMS</a>
+                                <li class="u-nav-item"><a href="{% url 'financial_info_terms_to_know' %}" class="u-button-style u-nav-link u-white">FINANCIAL TERMS</a>
                                 </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">INVESTMENT
+                                <li class="u-nav-item"><a href="{% url 'financial_info_investment_philosophy' %}" class="u-button-style u-nav-link u-white">INVESTMENT
                                     PHILOSOPHY</a>
                                 </li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">WESPATH
+                                <li class="u-nav-item"><a href="{% url 'financial_info_wespath_institutional_investments' %}" class="u-button-style u-nav-link u-white">WESPATH
                                     INSTITUTIONAL INVESTMENTS</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="u-nav-item"><a href="{% url 'news_events' %}"
-                            class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
-                            style="padding: 10px 7px;">NEWS &amp; EVENTS</a>
+                                              class="u-button-style u-nav-link u-text-active-custom-color-5 u-text-hover-custom-color-2"
+                                              style="padding: 10px 7px;">NEWS &amp; EVENTS</a>
                         <div class="u-nav-popup">
                             <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
                                 <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">FOUNDATION NEWS</a>
@@ -243,7 +244,7 @@
             </div>
         </nav>
         <a href="#"
-           class="u-border-none u-btn u-button-style u-custom-color-5 u-hover-custom-color-6 u-btn-2">APPLY </a>
+           class="u-border-none u-btn u-button-style u-custom-color-5 u-hidden-md u-hidden-sm u-hidden-xs u-hover-custom-color-6 u-btn-2">APPLY </a>
     </div>
 </header>
 <section
@@ -583,14 +584,14 @@
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.querySelector(".u-header").style.background = "#fff";
-        document.querySelector(".u-header").style.boxShadow = "hsl(0, 0%, 80%) 0 0 16px";
-        document.querySelector(".brand-name").style.color = "#000";
+        document.querySelector(".u-header").style.background = "#007d7e";
+        document.querySelector(".u-header").style.boxShadow = "#007d7e";
+        document.querySelector(".u-header").style.color = "#fff";
 
       } else {
         document.querySelector(".u-header").style.background = "transparent";
         document.querySelector(".u-header").style.boxShadow = "none";
-        document.querySelector("brand-name").style.color = "#fff";
+        document.querySelector(".u-header").style.color = "#fff";
       }
     }
 
